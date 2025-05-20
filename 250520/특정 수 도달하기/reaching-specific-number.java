@@ -7,14 +7,11 @@ public class Main {
         int[] arr = new int[10];
         int sum = 0;
         int cnt = 0;
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < 10; i++) {
             arr[i] = sc.nextInt();
             if (arr[i] < 250) {
                 sum += arr[i];
                 cnt++;
-            }
-            else {
-                break;
             }
         }
         double avg = (double) sum / cnt;
