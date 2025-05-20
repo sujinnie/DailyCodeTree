@@ -6,15 +6,13 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        boolean isValid = false;
         for (int i = a; i <= b; i++) {
             if (1920 % i == 0 && 2880 % i == 0) {
-                isValid = true;
-                break;
+                System.out.println(1);
+                return;
             }
         }
         
-        if(isValid) System.out.println(1);
-        else System.out.println(0);
+        System.out.println(0);
     }
 }
