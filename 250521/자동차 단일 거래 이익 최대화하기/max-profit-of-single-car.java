@@ -10,10 +10,10 @@ public class Main {
             arr[i] = sc.nextInt();
         }
 
-        if(n == 1) {
-            System.out.println(arr[0]);
-            return;
-        }
+        // if(n == 1) {
+        //     System.out.println(arr[0]);
+        //     return;
+        // }
 
         int minPrice = arr[0];
         int maxPrice = 0;
