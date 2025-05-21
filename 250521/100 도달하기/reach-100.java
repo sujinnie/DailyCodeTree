@@ -13,7 +13,7 @@ public class Main {
         while (true) {
             int c = a + b;        // 새로 만들 다음 항
             System.out.print(" " + c);
-            
+            if (c > 100) break;   // 100 초과하면 멈춤
 
             // 한 칸씩 앞으로 당기기
             a = b;
