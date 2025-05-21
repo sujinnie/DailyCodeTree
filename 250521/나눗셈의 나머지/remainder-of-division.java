@@ -7,11 +7,12 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        int[] countArr = new int[a];
+        int[] countArr = new int[b];
 
         while(a > 1) {
+            int r = a%b;
             a /= b;
-            countArr[a%b]++;
+            countArr[r]++;
         }
 
         int sum = 0;
