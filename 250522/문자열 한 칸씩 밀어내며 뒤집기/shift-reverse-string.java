@@ -17,11 +17,7 @@ public class Main {
                 System.out.println(s);
             }
             else {
-                String reversed = "";
-                for(int k=len-1; k>=0; k--) {
-                    reversed += s.charAt(k);
-                }
-                s = reversed;
+                s = new StringBuilder(s).reverse().toString();
                 System.out.println(s);
             }
         }
