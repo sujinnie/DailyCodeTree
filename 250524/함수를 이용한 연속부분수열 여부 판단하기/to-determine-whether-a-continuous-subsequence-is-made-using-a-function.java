@@ -3,14 +3,17 @@ public class Main {
     static int n1, n2;
 
     private static boolean isValid(int[] a, int[] b) {
-        for(int i=0; i<n1-n2; i++) {
-            int cnt = 0;
+        if(n2 > n1) return false;
+        
+        for(int i=0; i<=n1-n2; i++) {
+            boolean match = true;
             for(int j=0; j<n2; j++) {
-                if(a[i+j] == b[j]) {
-                    cnt++;
+                if(a[i+j] != b[j]) {
+                    match = false;
+                    break;
                 }
             }
-            if(cnt == n2) return true;
+            if(match) return true;
         }
         return false;
     }
