@@ -10,8 +10,8 @@ public class Main {
                 break;
             }
 
-            digit[cnt++] = num%2;
-            num /= 2;
+            digit[cnt++] = num%n;
+            num /= n;
         }
 
         String nNum = "";
