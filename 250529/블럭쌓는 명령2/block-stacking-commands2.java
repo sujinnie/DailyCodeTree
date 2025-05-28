@@ -11,7 +11,7 @@ public class Main {
             int A = sc.nextInt();
             int B = sc.nextInt();
             for(int j=A; j<=B; j++) {
-                block[j]++;
+                block[j-1]++;
             }
         }
 
