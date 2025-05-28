@@ -15,6 +15,11 @@ public class Main {
         int mon = m1, day = d1, yoil = 0;
         int cnt = day_of_week[0].equals(A) ? 1 : 0;
 
+        if (m1 == m2 && d1 == d2) {
+            System.out.println(dnt);
+            return;
+        }
+        
         while(true) {
             yoil = (yoil+1) % 7;
             day++;
