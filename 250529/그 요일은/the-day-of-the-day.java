@@ -21,9 +21,9 @@ public class Main {
             if(day > num_of_days[mon]) {
                 day = 1;
                 mon++;
-                // if (mon > 12) {
-                //     mon = 1; 
-                // }
+                if (mon > 12) {
+                    mon = 1; 
+                }
             }
 
             if(day_of_week[yoil].equals(A)) {
